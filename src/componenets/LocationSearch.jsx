@@ -26,7 +26,7 @@ const LocationSearch = () => {
                     </Typography>
                     {item.withIcon  && (
                         <Box sx={{ml:1, mr:1, mt:1}}>
-                            <SearchSharpIcon color={pink[500]} size={32}/>
+                            <SearchSharpIcon sx={{ color: pink[500], bgColor:pink[500] }}  size={32}/>
                         </Box>
                     )}
                 </Button>

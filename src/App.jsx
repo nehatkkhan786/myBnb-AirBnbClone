@@ -1,9 +1,14 @@
 import React from 'react'
-import {Box, CssBaseline} from '@mui/material'
+import {Box, CssBaseline, Container} from '@mui/material'
 import Header from './componenets/Header'
-function App() {
-  
+import OptionsTabs from './componenets/OptionsTabs'
+import LocationCards from './componenets/LocationCards'
 
+
+
+
+
+function App() {
   return (
     <>
     <CssBaseline/>
@@ -13,6 +18,10 @@ function App() {
       height: '100vh'
     }}>
       <Header/>
+      <OptionsTabs/>
+      <Container maxWidth='xl' sx={{mb:3}}>
+          <LocationCards/>
+      </Container>
     </Box>
     </>
   )

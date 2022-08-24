@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from './Logo'
 import {Box, Container} from '@mui/material'
 import LocationSearch from './LocationSearch'
+import ProfileSettings from './ProfileSettings'
+import MobileSearch from './MobileSearch'
 const Header = () => {
   return (
     <Box sx={{
@@ -20,8 +22,19 @@ const Header = () => {
                minHeight:70, 
                px:4,
             }}>
-                <Logo/>
-                <LocationSearch/>
+                <Box sx={{display:{xs:'none', md:'block' }}}>
+                    <Logo/>
+                </Box>
+                <Box  sx={{display:{xs:'none', md:'block' }}}>
+                    <LocationSearch/>
+                </Box>
+               <Box  sx={{display:{xs:'none', md:'block' }}} >
+                <ProfileSettings/>
+               </Box>
+               <Box  sx={{display:{xs:'flex', md:'none' }}}>
+                 <MobileSearch/>
+               </Box>
+               
             </Box>
 
         </Container>
