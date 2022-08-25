@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, CssBaseline, Container} from '@mui/material'
+import {Box, CssBaseline, Container} from '@mui/material/'
 import Header from './componenets/Header'
 import OptionsTabs from './componenets/OptionsTabs'
 import LocationCards from './componenets/LocationCards'
