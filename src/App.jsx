@@ -6,6 +6,7 @@ import Header from './componenets/Header'
 import OptionsTabs from './componenets/OptionsTabs'
 import LocationCards from './componenets/LocationCards'
 import Footer from './componenets/Footer/Footer'
+import MobileFooterMenu from './componenets/Footer/MobileFooterMenu';
 
 function App() {
   return (
@@ -23,9 +24,13 @@ function App() {
             <LocationCards/>
         </Container>
       </Box>
-      <Box>
+      <Box sx={{display:{xs:'flex', md:'none'}}}>
+        <MobileFooterMenu/>
+      </Box>
+      <Box sx={{display:{xs:'none', md:'flex'}}}>
         <Footer/>
       </Box>
+      
     </Box>
     </>
   )

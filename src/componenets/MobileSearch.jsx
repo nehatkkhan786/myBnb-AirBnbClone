@@ -10,7 +10,7 @@ const MobileSearch = () => {
         p:'2px 4px',
         border: '1px solid #ccc',
         borderRadius:20,
-        width:400,
+        width:{xs:'300', sm:'400'},
     }}>
         <IconButton sx={{p:'10px'}}>
             <SearchRoundedIcon/>

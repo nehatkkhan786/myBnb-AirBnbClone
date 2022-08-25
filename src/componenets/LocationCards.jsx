@@ -3,6 +3,7 @@ import {Box, Grid} from '@mui/material'
 import {useState} from 'react'
 import { locations } from '../data/mock-data' 
 import CarousalCard from './CarousalCard'
+import MobileFooter from './Footer/MobileFooter'
 
 const LocationCards = () => {
     const [cardlocations, setCardLocation] = useState(locations)
@@ -17,6 +18,9 @@ const LocationCards = () => {
                 )
             })}
         </Grid>
+        <Box sx={{display:{xs:'flex', md:'none'}}}>
+          <MobileFooter/> 
+      </Box>
    </Box>
   )
 }
