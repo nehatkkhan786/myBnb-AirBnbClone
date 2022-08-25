@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Container, Stack, Paper, Link, Button} from '@mui/material'
+import {Box, Container, Stack, Paper, Link, Button} from '@mui/material/'
 import PublicIcon from '@mui/icons-material/Public';
 import ContactSupportOutlinedIcon from '@mui/icons-material/ContactSupportOutlined';
 
@@ -23,7 +23,7 @@ const Footer = () => {
                     {
                         footerLinks.map((item)=>{
                             return (
-                                <Paper>
+                                <Paper key={item.id}>
                                     <Link href='item.url'>{item.text}</Link>
                                 </Paper>
                             )

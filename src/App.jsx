@@ -5,10 +5,6 @@ import OptionsTabs from './componenets/OptionsTabs'
 import LocationCards from './componenets/LocationCards'
 import Footer from './componenets/Footer/Footer'
 
-
-
-
-
 function App() {
   return (
     <>
