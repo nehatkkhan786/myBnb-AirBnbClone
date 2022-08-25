@@ -3,6 +3,7 @@ import {Box, CssBaseline, Container} from '@mui/material'
 import Header from './componenets/Header'
 import OptionsTabs from './componenets/OptionsTabs'
 import LocationCards from './componenets/LocationCards'
+import Footer from './componenets/Footer/Footer'
 
 
 
@@ -19,9 +20,14 @@ function App() {
     }}>
       <Header/>
       <OptionsTabs/>
-      <Container maxWidth='xl' sx={{mb:3}}>
-          <LocationCards/>
-      </Container>
+      <Box sx={{ display:'flex', flexDirection:'column', height:'100', overflowY:'scroll'}}>
+        <Container maxWidth='xl' sx={{mb:3}}>
+            <LocationCards/>
+        </Container>
+      </Box>
+      <Box>
+        <Footer/>
+      </Box>
     </Box>
     </>
   )

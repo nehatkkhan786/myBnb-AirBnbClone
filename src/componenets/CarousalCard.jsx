@@ -30,7 +30,7 @@ const CarousalCard = ({cardLocation}) => {
     }
 
   return (
-    <Box sx={{flexGrow:1, position:'relative'}}>
+    <Box sx={{flexGrow:1, position:'relative'}} className='carousal'>
         <Box sx={{position:'absolute', right:10, top:10, zIndex:10}}>
             <FavoriteBorderIcon size={24} color='#fff'/>
         </Box>
@@ -48,7 +48,7 @@ const CarousalCard = ({cardLocation}) => {
             </SwipeableViews>
         )}
 
-        <Box sx={{position:'absolute', bottom:'100', width:'100%'}}>
+        <Box sx={{position:'absolute', bottom:100, width:'100%'}}>
             <MobileStepper  
             
             sx={{backgroundColor:'transparent'}}
@@ -68,6 +68,29 @@ const CarousalCard = ({cardLocation}) => {
                 </Button>
             }
             />
+        </Box>
+
+        <Box sx={{display:'flex', justifyContent:'space-between'}}>
+            <Box sx={{mt:2}}>
+                <Typography component='h3'>{cardLocation.location}</Typography>
+                <Typography component='h3'>{cardLocation.days}</Typography>
+                <Typography component='h3'>{cardLocation.price}</Typography>
+            </Box>
+            <Box sx={{mt:2}}>
+                <Box sx={{display:'flex', flexDirection:'row'}}>
+                    {cardLocation?.isNew ? (
+                        <>
+                        <Typography component='h5'>New</Typography>
+                        <StarBorderIcon size={18}/>
+                        </>
+                    ) : (
+                        <>
+                            <Typography component='h5'>{cardLocation.rating}</Typography>
+                            <StarBorderIcon size={18}/>
+                        </>
+                    )}
+                </Box>
+            </Box>
         </Box>
         
 

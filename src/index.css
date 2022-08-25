@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,100;1,200&display=swap');
 html, body{
-  padding: 0;
-  margin: 0;
   height: 100vh;
   overflow: hidden;
+}
+.carousal .MuiMobileStepper-root{
+  opacity: 0;
+  transition: all ease 1000ms;
+}
+.carousal:hover .MuiMobileStepper-root {
+  opacity: 1;
+}
+.carousal:hover 	.MuiMobileStepper-dotActive {
+ background-color: #fff;
 }

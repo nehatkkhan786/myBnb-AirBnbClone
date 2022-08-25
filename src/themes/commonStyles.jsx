@@ -47,15 +47,15 @@ export const flexBetween = {
   /** Custom carousel styles */
   
   export const carouselDot = {
-    color: '#fff',
-    backgroundColor: '#000',
-    opacity: 0.5,
-    borderRadius: 10,
-    p: 1,
-    minWidth: 'auto',
+      color: '#fff',
+      backgroundColor: '#000',
+      opacity: 0.5,
+      borderRadius: 10,
+      p: 1,
+      minWidth: 'auto',
   };
   
-  export const fixedIcon = {
+  export const fixedIcon = {  
     position: 'absolute',
     right: 10,
     top: 10,
