@@ -15,7 +15,7 @@ const ProfileSettings = () => {
             <Button sx={{borderRadius:10, border:'1px solid #ddd'}}>
                 <Stack>
                     <MenuRoundedIcon/>
-                    <PersonRoundedIcon/>
+                    <PersonRoundedIcon sx={{ color:'#E95420'}}/>
                 </Stack>
             </Button>
         </Stack>

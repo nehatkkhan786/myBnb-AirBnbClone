@@ -12,7 +12,7 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: grey[700],
+      main:'#E95420',
     },
     secondary: {
       main: pink[500],
